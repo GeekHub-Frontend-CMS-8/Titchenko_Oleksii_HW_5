@@ -1,0 +1,195 @@
+/** { margin: 0;
+    padding: 0; 
+} /*сброс всех стилей*/
+
+/*body {
+    width: 100%;
+    margin:0 auto;
+}*/
+    
+* {box-sizing: border-box;}
+
+#wrapper {
+    display: flex;
+    flex-direction: column; /*основная ось идёт вертикально.*/
+    width: 100%;
+}
+    /*align-items: stretch;*/   
+    /*justify-content: flex-start;/*прижимает к первому блоку*/    
+    /*max-width: 100%*/     
+    /*flex-basis: 1170px; /* указывает исходный главный размер flex-элемента*/
+.logo {   
+    display: flex;
+    align-items: center;  
+    align-content: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: #f6f9f9;
+    padding-left: 15%;    
+ }
+.banner {
+    background-image: url(images/Background%20header.jpg);   
+    background-color: #767e8c;
+    background-size: cover; 
+    min-height: 795px;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.banner_text {
+    text-align: center;
+    color: #f6f9f9;
+}
+h1 {
+    font-family: "Lato";
+    font-size: 120px;
+    text-transform: uppercase;    
+    } 
+p {
+    font-family: "Lato";
+    font-size: 20px;
+    line-height: 47px;    
+}
+button {
+    width: 175px;
+    height: 60 px;
+    border-radius: 2px;
+    border: 1 px solid #f6f9f9;
+    background-color: rgb(0,0,0,0);
+    outline: none;
+    font-size: 18px;
+}
+.arrow {    
+    /*padding-bottom: 11%;*/
+    /*position:absolute;
+    bottom: 0px;/*надо прижать к низу*/
+    /*align-items:flex-end;*/
+    /*justify-content:flex-end;*/
+}*/
+/*SIMPLE & PURE*/
+.simple_pure {
+    max-width: 1170px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #f6f9f9;   
+    margin: auto;
+}
+/*.simple_pure*/ h2 {
+    font-family: "Lato"; 
+    color: #2d3950;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+p.simple_pure_text {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #999999;
+    text-align: center;
+}
+/*ICON_ELEMENTS*/
+.icon_element {
+    display:flex;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-around; /*justify-content:space-between; /*одинаковые отступы между ними*/
+    background-color: #ffffff;
+    padding: 65px;    
+}
+/*PORTFOLIO*/
+.portfolio-title {
+    text-align: center;
+}
+.portfolio_my-work {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*одинаковые отступы вокруг*/
+    align-items: center;
+    max-width: calc (100%/3 - 220px); /*не сработало*/
+}  
+.pressbox {
+    width: 0;
+    height: 0;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+}
+.my_work {
+    padding-bottom: 30px;
+}   
+    /*flex-basis: content; /*Автоматически изменяет размер на основе содержимого элемента*/
+/*FORM*/
+.form_stay {
+    background-image: url(images/stay-fog.jpg);    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.form_stay h2 {
+    text-align: center;
+    color: #f6f9f9;
+}
+.form_stay p {
+    text-align: center;
+    color: #999999;
+}
+.section_form {
+    background-color: rgb(0,0,0,0);
+    margin: auto;
+    font-family: "Lato";
+    max-width: 35%;
+    padding:0 5px 80px;
+    color: #999999;
+}
+.input1 {
+    width: 550px;
+    height: 65px;
+    background-color: rgb(0,0,0,0);
+}
+.message {
+    width: 550px;
+    height: 165px;
+    font-family: "Lato";
+    font-size: 15px;
+    color: #999999;
+    background-color: rgb(0,0,0,0);
+}
+.button_form{
+    width: 140px;
+    height: 50 px;
+    border-radius: 2px;
+    border: 1 px solid #f6f9f9;
+    background-color: rgb(0,0,0,0);
+    outline: none;
+    font-size: 12px;
+    color: #f6f9f9;
+    margin-left: 200px;
+}
+/*ul {
+    list-style-type: none; убирает маркер
+}*/
+/*FOOTER*/
+.footer {
+    display: inline-flex;
+    justify-content:space-between;
+    margin: 10px;
+}
+.footer_text {
+    color: darkgrey;
+    font-size: 12px;    
+}
+a:hover {
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    background: #555;
+}
